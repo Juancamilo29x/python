@@ -1,0 +1,11 @@
+class Square:
+    def __init__(self, side):
+        self.side = side
+
+    def area(self):
+        return self.side * self.side
+
+side = float(input("Ingrese la longitud de un lado del cuadrado: "))
+
+square = Square(side)
+print("El area del cuadrado es:", square.area())

@@ -1,0 +1,16 @@
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+length = float(input("Ingrese la longitud del rectángulo: "))
+width = float(input("Ingrese el ancho del rectángulo: "))
+
+if length==width:
+    print("no es un rectangulo, es un cuadrado");
+else:
+    rectangle = Rectangle(length, width)
+    print("El Area del rectangulo es:", rectangle.area())

@@ -1,0 +1,13 @@
+class RightTriangle:
+    def __init__(self, base, height):
+        self.base = base
+        self.height = height
+
+    def area(self):
+        return 0.5 * self.base * self.height
+
+base = float(input("Ingrese la longitud de la base del triangulo: "))
+height = float(input("Ingrese la altura del triangulo: "))
+
+triangle = RightTriangle(base, height)
+print("El area del triangulo rectangulo es:", triangle.area())
